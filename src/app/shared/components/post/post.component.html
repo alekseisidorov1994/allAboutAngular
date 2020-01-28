@@ -1,0 +1,8 @@
+<div class="card">
+  <div class="card-header">
+    <h2>{{newPost.title}}</h2>
+    <small>{{newPost.date | date:'medium': null: 'ru'}}</small>
+  </div>
+  <small> {{newPost.author}}</small>
+  <button [routerLink]="['/post', newPost.id]" class="btn btn-dark">Open</button>
+</div>
